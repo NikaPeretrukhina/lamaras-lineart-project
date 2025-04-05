@@ -3,30 +3,34 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import { gql, useQuery } from '@apollo/client';
+// import { gql, useQuery } from '@apollo/client';
 
-const GET_PAGE = gql`
-  query getPage($id: ID!) {
-    page(id: $id) {
-      title
-      content
-    }
-  }
-`
+// const GET_PAGE = gql`
+//   query getPage($id: ID!) {
+//     page(id: $id) {
+//       title
+//       content
+//     }
+//   }
+// `
 
-function App({ page }) {
-  console.log(page)
+function App() {
+  // TODO: Insert FOOTER here, Nika: I'm talking to you.
+  // TODO: Stop watching Instagram Reels
+  return <div>App.jsx</div>
 
-  const { loading, error, data } = useQuery(GET_PAGE, { 
-    variables: { id: page.id } 
-  });
+  // console.log(page)
 
-  if (loading) return 'Loading...';
-  if (error) return `Error! ${error.message}`;
+  // const { loading, error, data } = useQuery(GET_PAGE, { 
+  //   variables: { id: page.id } 
+  // });
 
-  console.log(data)
+  // if (loading) return 'Loading...';
+  // if (error) return `Error! ${error.message}`;
 
-  return <div dangerouslySetInnerHTML={{__html: data.page.content}}></div>
+  // console.log(data)
+
+  // return <div dangerouslySetInnerHTML={{__html: data.page.content}}></div>
 
   // const [count, setCount] = useState(0)
 
