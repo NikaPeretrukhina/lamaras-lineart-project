@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from "./Footer";
 
 // import { gql, useQuery } from '@apollo/client';
 
@@ -17,7 +16,10 @@ import './App.css'
 function App() {
   // TODO: Insert FOOTER here, Nika: I'm talking to you.
   // TODO: Stop watching Instagram Reels
-  return <div>App.jsx</div>
+  return <div>
+  <Footer />
+
+</div>
 
   // console.log(page)
 
@@ -61,3 +63,4 @@ function App() {
 }
 
 export default App
+

@@ -6,3 +6,12 @@ export const GQL_GET_IMPRINT = `
         }
     }
 `
+export const GQL_GET_PRIVACY_POLICY = `
+    query {
+        page(id: 3033, idType: DATABASE_ID){
+            title
+            content
+        }
+    }
+
+`

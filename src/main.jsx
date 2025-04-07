@@ -1,12 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import './index.css'
 import App from './components/App.jsx'
 import Imprint from './components/Imprint.jsx'
+import PrivacyPolicy from './components/PrivacyPolicy.jsx'
 
 const client = new ApolloClient({
   uri: 'https://www.lamaras-lineart.at/graphql',
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route index element={<App />} />
         <Route path="impressum" element={<Imprint />} />
+        <Route path="datenschutzerklärung" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
     </ApolloProvider>
