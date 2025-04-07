@@ -5,8 +5,8 @@ import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import './index.css'
-import App from './App.jsx'
-import Imprint from './Imprint.jsx'
+import App from './components/App.jsx'
+import Imprint from './components/Imprint.jsx'
 
 const client = new ApolloClient({
   uri: 'https://www.lamaras-lineart.at/graphql',
