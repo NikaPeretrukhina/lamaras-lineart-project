@@ -11,9 +11,8 @@ function Footer() {
     if (loading) return 'Loading...'
     if (error) return `Error! ${error.message}`
 
-    console.log(data)
     return (
-        <div>
+        <div className="footer">
             <img src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> 
             <a href="/impressum">Impressum</a>
             <a href="/datenschutzerklärung">Datenschutzerklärung</a>
