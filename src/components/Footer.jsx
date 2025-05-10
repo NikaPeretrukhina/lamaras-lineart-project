@@ -1,6 +1,5 @@
 import { GQL_GET_MEDIA_ITEM, MEDIA_ITEMS } from '../constants'
 import { useGraphQL } from '../helpers'
-import './App.css'
 // anker zum footer components erstellen(ein link)
 
 function Footer() {
@@ -13,9 +12,12 @@ function Footer() {
 
     return (
         <div className="footer">
-            <img src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> 
-            <a href="/impressum">Impressum</a>
-            <a href="/datenschutzerklärung">Datenschutzerklärung</a>
+          
+            <div><img width="40px" src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> </div>
+            <div>Nav</div>
+            <div><a href="/impressum">Impressum</a>
+            <a href="/datenschutzerklärung">Datenschutzerklärung</a></div>
+            
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import {GQL_GET_PRIVACY_POLICY } from '../constants';
 import { useGraphQL } from '../helpers';
-import './App.css'
+
 
 function PrivacyPolicy() {
     const { loading, error, data } = useGraphQL(GQL_GET_PRIVACY_POLICY)

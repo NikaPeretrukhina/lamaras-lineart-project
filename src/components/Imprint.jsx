@@ -1,6 +1,6 @@
 import { GQL_GET_IMPRINT } from '../constants';
 import { useGraphQL } from '../helpers';
-import './App.css'
+
 
 function Imprint() {
     const { loading, error, data } = useGraphQL(GQL_GET_IMPRINT)

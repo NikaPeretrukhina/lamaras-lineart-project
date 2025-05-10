@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import './App.css'
 import Footer from "./Footer";
+
 
 // import { gql, useQuery } from '@apollo/client';
 
@@ -17,7 +16,7 @@ function App() {
   // TODO: Insert FOOTER here, Nika: I'm talking to you.
   // TODO: Stop watching Instagram Reels
   return (
-    <div>
+    <div className="app-container">
       <Footer />
     </div>
   )
