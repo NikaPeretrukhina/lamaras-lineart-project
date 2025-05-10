@@ -16,10 +16,11 @@ import Footer from "./Footer";
 function App() {
   // TODO: Insert FOOTER here, Nika: I'm talking to you.
   // TODO: Stop watching Instagram Reels
-  return <div>
-  <Footer />
-
-</div>
+  return (
+    <div>
+      <Footer />
+    </div>
+  )
 
   // console.log(page)
 
