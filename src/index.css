@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -85,8 +85,31 @@ button:focus-visible {
 
 .footer{
   grid-area: footer;
+  padding: 3em;
   display: flex;
   justify-content: flex-start;
-  gap: 10%;
-  background-color: magenta;
+  gap: 3em;
+  background-color: #1b1c1d;
+  background-image: url(../public/mandala1.png);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 200px;
+
+}
+.footer-logo img{
+  width: 6em;
+  margin-left: -0.9em;
+  margin-top: -2em;
+}
+    
+
+.footer-nav a{
+  display:block;
+  margin: 0.1em;
+
+}
+.footer-copyright a{
+  display:block;
+  margin: 0.1em;
+
 }

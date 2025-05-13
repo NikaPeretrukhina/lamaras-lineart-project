@@ -13,10 +13,26 @@ function Footer() {
     return (
         <div className="footer">
           
-            <div><img width="40px" src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> </div>
-            <div>Nav</div>
-            <div><a href="/impressum">Impressum</a>
-            <a href="/datenschutzerklärung">Datenschutzerklärung</a></div>
+            <div className="footer-logo">
+                <img src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> 
+            </div>
+        
+            <div className="footer-nav">
+                
+                <a href="/ueber-mich">Über mich</a>
+                <a href="/referenzen">Referenzen</a>
+                <a href="/kontakt"> Kontakt</a>
+                
+            </div>
+
+            <div className="footer-copyright">
+            
+                <a href="/email">Copyright: lamaraslineart@gmail.com</a>
+                <a href="/impressum">Impressum</a>
+                <a href="/datenschutzerklärung">Datenschutzerklärung</a>
+                <a href="/cookie-einstellungen">Cookie Einstellungen</a>
+                
+            </div>
             
         </div>
     )
