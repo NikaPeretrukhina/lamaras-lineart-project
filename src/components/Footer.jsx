@@ -1,6 +1,6 @@
 import { GQL_GET_MEDIA_ITEM, MEDIA_ITEMS } from '../constants'
 import { useGraphQL } from '../helpers'
-// anker zum footer components erstellen(ein link)
+
 
 function Footer() {
     const { loading, error, data } = useGraphQL(GQL_GET_MEDIA_ITEM, {
@@ -21,6 +21,8 @@ function Footer() {
                 
                 <a href="/ueber-mich">Über mich</a>
                 <a href="/referenzen">Referenzen</a>
+                <a href="/reviews">Bewertungen</a>
+                
                 <a href="/kontakt"> Kontakt</a>
                 
             </div>

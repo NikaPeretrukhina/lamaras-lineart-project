@@ -113,3 +113,11 @@ button:focus-visible {
   margin: 0.1em;
 
 }
+.nav{
+  grid-area: nav;
+  display: flex;
+  
+}
+.nav-logo img{
+width: 6em;
+}

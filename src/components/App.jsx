@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import Navigation from "./Navigation";
 
 
 // import { gql, useQuery } from '@apollo/client';
@@ -17,6 +18,7 @@ function App() {
   // TODO: Stop watching Instagram Reels
   return (
     <div className="app-container">
+      <Navigation />
       <Footer />
     </div>
   )

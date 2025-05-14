@@ -29,3 +29,6 @@ export const GQL_GET_MEDIA_ITEM = `
 export const MEDIA_ITEMS = {
     "LamaWeiss": "cG9zdDozMTg0",
 }
+export const LOGO_SCHRIFT = {
+    "LogoLamara": "cG9zdDoyOTI4",
+}
