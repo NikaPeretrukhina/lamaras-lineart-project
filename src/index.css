@@ -116,8 +116,15 @@ button:focus-visible {
 .nav{
   grid-area: nav;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
   
 }
 .nav-logo img{
-width: 6em;
+ width: 6em;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
 }

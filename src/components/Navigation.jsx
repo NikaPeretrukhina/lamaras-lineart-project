@@ -18,7 +18,12 @@ function Navigation() {
          <img src={data.mediaItem.sourceUrl} title={data.mediaItem.title}></img> 
         </div>
 
-        <div>Über mich</div>
+        <div className="nav-links">
+          <a href="about-me">Über mich</a>
+          <a href="portfolio">Referenzen</a>
+          <a href="reviews">Bewertungen</a>
+          <a href="contsct">Termin Vereinbaren</a>
+        </div>
         
     </div>
     )
