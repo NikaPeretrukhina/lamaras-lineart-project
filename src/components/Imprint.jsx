@@ -1,14 +1,9 @@
-import { GQL_GET_IMPRINT } from '../constants';
-import { useGraphQL } from '../helpers';
+import { DATABASE_ID_IMPRINT, GQL_GET_PAGE_BY_DATABASE_ID } from '../constants';
+import { getDataParallel } from '../helpers';
 
-
-function Imprint() {
-    const { loading, error, data } = useGraphQL(GQL_GET_IMPRINT)
-
-    if (loading) return 'Loading...'
-    if (error) return `Error! ${error.message}`
-
-    return <div dangerouslySetInnerHTML={{__html: data.page.content}}></div>
+export default async function Imprint() {
+    const [imprintContent] = await getDataParallel([
+        [GQL_GET_PAGE_BY_DATABASE_ID, { variables: { id: DATABASE_ID_IMPRINT } }]
+    ])
+    return <div dangerouslySetInnerHTML={{ __html: imprintContent.page.content }}></div>
 }
-
-export default Imprint

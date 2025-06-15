@@ -1,3 +1,13 @@
-node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+/node_modules/
 package-lock.json
-dist
+/dist/
+/out/
+/build/
+/coverage
+/.next/
+/out/
+/build
+npm-debug.log*
+.env*
